@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    background-image: url("gambar/caturgambar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.head {
+    background-color: #ffffff;
+    padding: 2px;
+    
+}
+
+.h1tentang {
+    color: #ffffff;
+    text-align: center;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #000000;
+}
+
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2d4054;
+}
+
+.welcome {
+    margin: 1px auto;
+    text-align: center;
+    color: white;
+}
+
+.welcome2 {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: justify;
+    color: white;
+}
+
+.content,
+section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-article {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 20%;
+    margin: 30px auto;
+}
+
+.sidebar {
+    text-align: center; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 20%;
+    margin: 30px auto;
+}
+
+.kontak {
+    margin: 1px auto;
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+.paragraf {
+    text-align: justify;
+    font-family: Arial;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kontak {
+    background-color: rgb(222, 222, 207);
+}
+
+.ikuti {
+ color: aliceblue;
+ text-align: center;
+ 
+}
+
+.bawa {
+    color: rgb(159, 197, 8);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #070a00;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 0%;
+}
+
+.footer2 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 20%;
+}
+
+.footer3 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+    margin-top: 17%;
+}
+
+
+.sidebar:hover,
+.main-article:hover {
+    background-color: hsl(48, 59%, 91%);
+}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 1024px) {
+    .welcome2 {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .main-article,
+    .sidebar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content,
+    section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-article,
+    .sidebar {
+        width: 80%;
+    }
+
+    .welcome2 {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .h1tentang {
+        font-size: 1.5em;
+    }
+
+    .welcome2 {
+        margin: 10px;
+    }
+
+    .paragraf {
+        padding: 15px;
+        font-size: 0.95em;
+    }
+
+    footer, .footer2, .footer3 {
+        font-size: 0.8em;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
